@@ -1,4 +1,4 @@
-# Frontend Development Kurs
+# Frontend Development Course
 Organized by iFSR TU Dresden
 
 ## Content
