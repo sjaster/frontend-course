@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'reglo';
+    src: url('res/fonts/reglo.ttf') format('opentype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'reglo';
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* HOME PAGE */
+
+#home {
+    background-image: url('res/bg/home.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+#home>h1 {
+    font-size: 4em;
+}
+
+#home>p {
+    font-size: 1.3em;
+}
+
+#home-btn-l {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #F0532D;
+    text-decoration: none;
+    padding: 1.5em;
+    margin: 1em;
+    border-radius: 0.25em;
+    font-size: 1em;
+}
+
+#home-btn-l:hover {
+    background-color: #FC6E4B;
+}
+
+#home-btn-r {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #F0532D;
+    text-decoration: none;
+    padding: 24px;
+    margin: 16px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#home-btn-r:hover {
+    background-color: #FC6E4B;
+}
+
+
+/* BANNER 0 */
+
+#banner-0 {
+    background-image: url('res/bg/banner_a.png');
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    padding: 2.5em;
+    position: relative;
+}
+
+#banner-0-text {
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#banner-0-red {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
