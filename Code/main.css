@@ -119,10 +119,20 @@ body {
 
 #banner-1-text>p {
     font-size: 1.4em;
+    width: 65%;
 }
 
 #banner-1-text>h1 {
     font-size: 3em;
+    width: 65%;
+}
+
+#banner-1-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
 }
 
 #banner-1-btn {
