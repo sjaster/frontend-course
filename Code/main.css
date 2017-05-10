@@ -28,7 +28,6 @@ body {
     justify-content: center;
 }
 
-
 /* HOME PAGE */
 
 #home {
@@ -103,4 +102,35 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+#banner-1 {
+    background-image: url('res/bg/banner_1.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: auto;
+    padding: 2.5em;
+    position: relative;
+}
+
+#banner-1-text {
+    color:#ffffff;
+}
+
+#banner-1-text>p {
+    font-size: 1.4em;
+}
+
+#banner-1-text>h1 {
+    font-size: 3em;
+}
+
+#banner-1-btn {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #57ACCD;
+    text-decoration: none;
+    padding: 14px 42px;
+    border-radius: 4px;
+    font-size: 1.1em;
 }
