@@ -41,6 +41,28 @@ body {
 }
 
 
+/* NAVBAR */
+
+#navbar {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    width: calc(100vw - 2em);
+    height: 5em;
+    background-color: rgb(100%, 100%, 100%);
+    padding: 1em;
+    border-radius: .5em;
+}
+
+#navbar>* {
+    flex-shrink: 1;
+}
+
+#navbar .flex-fill {
+    flex-grow: 1;
+}
+
+
 /* HOME PAGE */
 
 #home {
@@ -153,4 +175,19 @@ body {
     padding: 14px 42px;
     border-radius: 4px;
     font-size: 1.1em;
+}
+
+#banner-2 {
+    height: 50vw;
+    widows: 100vw;
+}
+
+#banner-2-img {
+    background-image: url('res/bg/banner_2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#banner-2-text {
+    padding: 2em;
 }
