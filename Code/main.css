@@ -43,7 +43,7 @@ body {
 
 /* NAVBAR */
 
-#navbar {
+.navbar {
     position: fixed;
     top: 1em;
     left: 1em;
@@ -52,14 +52,64 @@ body {
     background-color: rgb(100%, 100%, 100%);
     padding: 1em;
     border-radius: .5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 10;
+    transition: all .5s;
 }
 
-#navbar>* {
+.navbar-full {
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0px;
+}
+
+.navbar>* {
     flex-shrink: 1;
 }
 
-#navbar .flex-fill {
+.navbar .flex-fill {
     flex-grow: 1;
+}
+
+.navbar>a {
+    text-transform: uppercase;
+    color: #888;
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+.navbar>a:hover {
+    color: #222;
+}
+
+#navbar-line {
+    height: 100%;
+    background-color: #888;
+    width: 1px;
+    margin-left: 1em;
+}
+
+.navbar>button {
+    color: #ffffff;
+    background-color: #F0532D;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 0.25em;
+    border: none;
+    font-size: 1em;
+}
+
+#navbar-cart {
+    height: 40%;
+    margin-right: 1em;
+    opacity: .5;
+}
+
+#navbar-cart:hover {
+    opacity: 1;
 }
 
 
@@ -186,6 +236,7 @@ body {
     background-image: url('res/bg/banner_2.png');
     background-size: cover;
     background-position: center;
+    min-height: 30em;
 }
 
 #banner-2-text {
