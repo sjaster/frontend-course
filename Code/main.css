@@ -191,6 +191,7 @@ body {
 
 #home-btn-l:hover {
     background-color: #FC6E4B;
+    display: inline-block;
 }
 
 #home-btn-r {
@@ -236,7 +237,7 @@ body {
     left: 0;
 }
 
-@media (max-width: 30em){
+@media (max-width: 30em) {
     #banner-1 {
         padding-top: 12em!important;
     }
@@ -280,11 +281,6 @@ body {
     font-size: 1.1em;
 }
 
-#banner-2 {
-    height: 50vw;
-    widows: 100vw;
-}
-
 #banner-2-img {
     background-image: url('res/bg/banner_2.png');
     background-size: cover;
@@ -294,4 +290,49 @@ body {
 
 #banner-2-text {
     padding: 2em;
+}
+
+#banner-3 {
+    background: rgb(230, 230, 230);
+    padding: 1em;
+}
+
+#carousell {
+    width: 100%;
+}
+
+#carousell .quote {
+    font-size: 2em;
+    text-align: center;
+}
+
+#carousell .body {
+    width: 100%;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+#carousell .body .slider {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+#carousell .body .arrow {
+    flex-shrink: 1;
+    padding: .5em;
+    font-size: 2em;
+}
+
+#carousell .body .slider .slider-item {
+    padding: .5em;
+    height: 100%;
+}
+
+#carousell .body .slider .slider-item img {
+    max-height: 100%;
+    max-width: 100%;
 }
