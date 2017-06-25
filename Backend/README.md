@@ -11,7 +11,7 @@
 cd Backend 
 docker-compose up
 ```
-3. Go to localhost:8080 & Start coding
+3. Go to [localhost:8080](localhost:8080/index.php) & Start coding
 
 ### Develop
 Go to `code` folder inside of `Backend`. There you can put all the `php` & `html` code
