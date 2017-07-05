@@ -20,10 +20,16 @@ try {
 
 	$result = $stmt->fetchAll();
 	
-	if(counst($result) == 0)
-		print(false);
+	if(count($result) == 0)
+		print(json_encode([
+			'status' => false,
+			'msg' => 'Wrong Auth'
+		]));
 	else
-		print(true);
+		print(json_encode([
+			'status' => true,
+			'msg' => 'Success'
+		]));
 
 }
 catch(PDOException $e)

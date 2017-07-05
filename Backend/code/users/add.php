@@ -10,15 +10,29 @@ try {
 	$mail = $_POST['my_mail'];
 	$pass = $_POST['my_pass'];
 
-	$stmt = $conn->prepare("INSERT INTO users (email, password) VALUES(?, ?)");
-
+	$stmt = $conn->prepare("SELECT * FROM users WHERE email=?");
 	$stmt->bindParam(1, $mail);
-	$stmt->bindParam(2, $pass);
-
 	$stmt->execute();
+	$result = $stmt->fetchAll();
 
-	print(json_encode($_GET));
-	print(json_encode($_POST));
+	if(count($result) != 0)
+		print(json_encode([
+			'status' => false,
+			'msg' => 'EMail Taken'
+		]));
+	else {
+		$stmt = $conn->prepare("INSERT INTO users (email, password) VALUES(?, ?)");
+
+		$stmt->bindParam(1, $mail);
+		$stmt->bindParam(2, $pass);
+
+		$stmt->execute();
+
+		print(json_encode([
+			'status' => true,
+			'msg' => 'Successfull'
+		]));
+	}
 
 }
 catch(PDOException $e)
